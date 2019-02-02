@@ -1,27 +1,31 @@
-h1. DMP was a member management sytem for the game EVE Online. 
+h1. DMP was a member management system for the game EVE Online. 
 
-EVE Online is a massive multiplayer that has thousands of players around the world flying around in space ships. The scale of this game is impressive and has made the news countless times whenever massive battles occur. 
+EVE Online is a massive multiplayer that has thousands of players around the world flying around in spaceships. The scale of this game is impressive and has made the news countless times whenever massive battles occur. 
 
-h2. Several concepts exists within this game, and for the purposes of this project I'm going to focus on these three:
+Note: I apologize for my immature commit messages. 
 
-1. Coorporations.
-A Cooporation is an entity that can contain members, own assets, and have custom branding. Similar to a guild, clan, or even a buisness. Members will join a coorporation to gain certain benefits such as shared communication, assets, and standings. Managing a cooporation can be a full-time (in-game) job for the CEO, Directors, or other members. Accepting a member into a cooporation also has risk, because they can steal, hunt, and destroy other member's assets. 
+h2. Several concepts exist within this game, and for this project, I'm going to focus on these three:
+
+1. Corporations.
+A Corporation is an entity that can contain members, own assets, and have custom branding. Similar to a guild, clan, or even a business. Members will join a corporation to gain certain benefits such as shared communication, assets, and standings. Managing a corporation can be a full-time (in-game) job for the CEO, Directors, or other members. Accepting a member into a corporation also has a risk, because they can steal, hunt, and destroy other member's assets. 
 
 2. Characters.
-When yo sign-up for an EVE Online account you have the ability to create and play with three characters. Each character is customizable from looks to the skill traits. After a character is created, you have to train the character with skills to unlock ships, modules, and other benefits. Typically, you want to always be training a character to gain skill points. The higher the skill points, the more benefits that character will have. Which equates to more opportunity.
+When you sign-up for an EVE Online account you can create and play with three characters. Each character is customizable from looks to the skill traits. After a character is created, you have to train the character with skills to unlock ships, modules, and other benefits. Typically, you want always to be training a character to gain skill points. The higher the skill points, the more benefits that character will have. 
 
 3. Assets
-Each character can have assets. An asset could be a ship, a module for ships, ISK (the in-game currency), or several other types of items that can be bought and sold from the in-game economy. These items can be manufactured, stolen, or recieved as an reward. 
+Each character can have assets. An asset could be a ship, a module for ships, ISK (the in-game currency), or several other types of items that can be bought and sold from the in-game economy. These items can be manufactured, stolen, or received as a reward. 
 
-h3. The challenge and risk of managing a Coorporation.
+h3. The challenge and risk of managing a Corporation.
 
-EVE Online is an open-world universe that allows players to decide their own future. When accepting new members into a coorporation, you as the Director or CEO have to weigh the risk of that player joining. Will they steal from us? Will they hurt other memebers? Will they benefit the corp? are all questions that have to be answered. It's a common strategy to join a corporation just to steal and hunt the members within that corp. Because of that, the owness is on the Director or CEO to investigate the joining member's history, references, and any other intel that can be found about that player. Some corporations go to great lengths, including an interview over voice chat (Teamspeak or Mumble).
+EVE Online is an open-world universe that allows players to decide their own future. When accepting new members into a corporation, you as the Director or CEO have to weigh the risk of that player joining. Will they steal from us? Will they hurt other members? Will they benefit the corp? are all questions that have to be answered. It's a common strategy to join a corporation to steal and hunt the members within that corp. Because of that, the responsibility is on the Director or CEO to investigate the joining member's history, references, and any other intel that can be found about that player. Some corporations go to great lengths, including an interview over voice chat (Teamspeak or Mumble).
 
 h3. My attempt at solving some of those problems. 
 
-I wanted to make it easier to manage a cooproation, it's members, and the investigation of a member. By using the EVE-Online API and several other APIs, I was able to create a platform that handled the registration, research, and management of a Coorporation. 
+I wanted to make it easier to manage a corporation, it's members and the investigation of a member. By using the EVE-Online API and several other APIs, I was able to create a platform that handled the registration, research, and management of a Corporation. 
 
-When a player wanted to join our coorporation, we would direct them to a website to fill out a form. That form included an API key and secret for that player so that our system could pull the required information to process their application. 
+When a player wanted to join our corporation, we would direct them to a website to fill out a form. That form included an API key and secret for that player so that our system could pull the required information to process their application. 
 
-h3. This was never finished, but it did work. 
+h3. This was never finished, but it did work well for a short period of time.
+
+This side-project started as an experiment to become more familiar with Ruby on Rails, and was also a playground to experiment with some architecture concepts. If I were to approach this project today, I would want to separate and modularize some of the systems so that it can scale with the size of a corporation or alliance that has hundreds or thousands of members. 
 
